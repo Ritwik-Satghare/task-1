@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: #DCECFC; for now*/ 
+    /* background-color: #DCECFC; */
 }
 .custom-shape-divider-bottom-1752397887 {
     position: absolute;
@@ -31,7 +31,7 @@
     display: flex;
     justify-content:flex-start;
     align-items: center;
-    padding: 60px 64px;
+    padding: 60px 64px 0px 64px;
 
     
 }
@@ -74,7 +74,8 @@ ul{
     /* padding: 17px 80px;      not working */
     background: linear-gradient(to right, #3462E7, #093Fc8);
     border: none;
-    box-shadow: 0px 4px rgba(0, 0, 0, 0.25); 
+    box-shadow: 0px 4px 4px 0px #00000040;
+ 
 
 }
 .header button a{
@@ -83,5 +84,71 @@ ul{
     font-family: roboto, sans-serif;
     line-height: 100%;
     font-style: medium;
+}
 
+/* hero */
+.hero{
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    padding-left: 87px;
+}
+.hero .main{
+    font-family: Oswald, sans-serif;
+    font-style: medium;
+    font-size: 35px;
+    line-height: 50px;
+    letter-spacing: 0;
+    max-width: 576px;
+}
+.hero .second{
+    font-family: 'Roboto', sans-serif;
+  font-weight: 400;     
+  font-style: normal;    
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0;   
+  max-width: 549px;   
+}
+/* search container */
+.search-container input {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #314d87;
+    color: white;
+    /* typo */
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border: none;
+    outline: none;
+
+}
+.search-container input::placeholder {
+color: white;
+font-family: Roboto;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+.search-container{
+    height: 32px;
+    max-width: 222px;
+    display: flex;
+    align-items: center;
+    background-color: #314d87;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    gap: 6px;
+    justify-content: space-around;
+    border-radius: 25px;
+}
+.search-container i{
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
 }
