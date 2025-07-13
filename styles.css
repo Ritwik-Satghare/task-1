@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #DCECFC; for now*/ 
+}
+.custom-shape-divider-bottom-1752397887 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1752397887 svg {
+    position: relative;
+    display: block;
+    width: calc(370% + 1.3px);
+    height: 900px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1752397887 .shape-fill {
+    fill: white;
+}
+
+
+/* header */
+.header{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 60px 64px;
+
+    
+}
+.header .logo{
+    width: 148px;
+    font-family: oswald, sans-serif;
+    font-weight: 500;
+    font-style: medium;
+    font-size: 35px;
+    height: 50px;
+    margin-right: 88px;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: roboto;
+    font-style: medium;
+    font-weight: 500;
+    height: 16px;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 130px;
+    justify-content: space-around;
+    margin-right: 177px;
+}
+.header .buttons{
+    display: flex;
+    gap: 33px;
+}
+.header button{
+    width: 119px;
+    height: 47px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 2px;
+    /* margin-left: 1055px;     not working */
+    border-radius: 15px;
+    /* padding: 17px 80px;      not working */
+    background: linear-gradient(to right, #3462E7, #093Fc8);
+    border: none;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.25); 
+
+}
+.header button a{
+    text-decoration: none;
+    color: white;        
+    font-family: roboto, sans-serif;
+    line-height: 100%;
+    font-style: medium;
+
+}
