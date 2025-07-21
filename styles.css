@@ -57,7 +57,7 @@ ul {
   display: flex;
   gap: 33px;
 }
-.header button {
+button {
   width: 119px;
   height: 47px;
   font-weight: 500;
@@ -70,7 +70,7 @@ ul {
   border: none;
   box-shadow: 0px 4px 4px 0px #00000040;
 }
-.header button a {
+button a {
   text-decoration: none;
   color: white;
   font-family: roboto, sans-serif;
@@ -105,7 +105,7 @@ ul {
   margin-top: 10px;
 }
 .hero .image img {
-  width: 777px; /* or your preferred width */
+  max-width: 760px; /* or your preferred width */
   height: auto; /* or set a fixed height if needed */
   object-fit: cover;
   object-position: left;
@@ -155,4 +155,173 @@ ul {
   margin-top: 10px;
   align-self: flex-start;
   margin-left: 10px;
+}
+
+/* trust-badge */
+
+.trustb-frame {
+  background: #dcecfc;
+  position: relative;
+  z-index: 1;
+  padding: 23px 121px;
+  width: 100vw;
+  margin: 32px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 250px;
+  /* flex-wrap: wrap;   looks ugly */
+}
+
+.trustb-frame h3 {
+  font-family: Oswald, sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-shadow: 2px 2px 6px 0px #00000040;
+}
+.trustb-frame h5 {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 15px;
+  letter-spacing: 0%;
+}
+.trustb-frame .section {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.trustb-frame .icon img {
+  filter: drop-shadow(2px 2px 6px 0px #00000040);
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+/* course section */
+.card {
+  width: 377px;
+  height: 447px;
+  top: 102px;
+  opacity: 1;
+  border-radius: 15px;
+  background-color: #dcecfc;
+  padding: 20px 17px 20px 17px;
+}
+.course-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* flex-wrap: wrap;     everything goes haywire */
+  gap: 56px;
+}
+.card-image img {
+  width: 336px;
+  height: 230px;
+}
+
+.card-content h3 {
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #000000;
+  margin: 23px 31px 12px 0px;
+}
+.card-content h4 {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+.card-content p {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+.card-title {
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 70px;
+  line-height: 50px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #314d8f;
+  text-shadow: 0px 4px 4px 0px #00000040;
+  margin-bottom: 33px;
+}
+.course button {
+  width: 178px;
+  display: flex;
+  justify-self: flex-end;
+  margin-top: 25px;
+  align-items: center;
+}
+.course .buttons button a {
+  display: block; /* make the <a> fill the button */
+  width: 100%;
+  text-align: center; /* center the “Explore More” text */
+}
+.course {
+  padding: 0px 100px;
+  margin-bottom: 65px;
+}
+
+/* degrees section */
+.swipe ul li a {
+  font-size: 22px;
+  line-height: 25px;
+  letter-spacing: 0%;
+  color: #000000;
+  text-align: center;
+}
+.swipe ul {
+  flex: 1;
+  gap: 60px;
+  display: flex;
+  flex-wrap: nowrap;
+  /* overflow-x: auto; */
+  padding: 10px 0;
+  list-style: none;
+  white-space: nowrap;
+  scrollbar-width: none; /* hide scrollbar on Firefox */
+  margin-left: 0px;
+}
+.swipe ul::-webkit-scrollbar {
+  display: none; /* hide scrollbar on Chrome/Safari */
+}
+.swipe {
+  width: 100%;
+  overflow: hidden;
+  margin: 56px 0px;
+}
+.swipe ul li:last-child {
+  /* margin-left: auto;  just not working idk why */
+}
+.swipe ul li:last-child {
+  width: 40px;
+  height: 40px;
+  background-color: #dcecfc;
+  border-radius: 100%;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
