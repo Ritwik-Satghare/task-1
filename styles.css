@@ -120,7 +120,7 @@ button a {
   /* typo */
   font-family: Roboto;
   font-weight: 400;
-  font-style: Regular;
+  font-style: normal;
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
@@ -131,7 +131,7 @@ button a {
   color: white;
   font-family: Roboto;
   font-weight: 400;
-  font-style: Regular;
+  font-style: normal;
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
@@ -176,7 +176,7 @@ button a {
 .trustb-frame h3 {
   font-family: Oswald, sans-serif;
   font-weight: 400;
-  font-style: Regular;
+  font-style: normal;
   font-size: 20px;
   line-height: 15px;
   letter-spacing: 0%;
@@ -185,7 +185,7 @@ button a {
 .trustb-frame h5 {
   font-family: Roboto, sans-serif;
   font-weight: 400;
-  font-style: Regular;
+  font-style: normal;
   font-size: 16px;
   line-height: 15px;
   letter-spacing: 0%;
@@ -217,8 +217,8 @@ button a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* flex-wrap: wrap;     everything goes haywire */
-  gap: 56px;
+  flex-wrap: wrap;     
+  gap: 46px;
 }
 .card-image img {
   width: 336px;
@@ -248,7 +248,7 @@ button a {
 .card-content p {
   font-family: Roboto, sans-serif;
   font-weight: 400;
-  font-style: Regular;
+  font-style: normal;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0%;
@@ -318,10 +318,117 @@ button a {
   height: 40px;
   background-color: #dcecfc;
   border-radius: 100%;
-  padding: 0;
+  padding-top: 6px;
   margin: 0;
   display: inline-block;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
+
+/* community */
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 77px;
+}
+.community-rectangle {
+  flex: 1 1 1;
+  width: 1221px;
+  height: 637px;
+  opacity: 1;
+  border-radius: 10px;
+  background-color: #dcecfc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.community-frame {
+  width: 1175px;
+  height: 578px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 55px;
+  padding: 0px 100px;
+  background-color: #eff7ff;
+  border-radius: 50px;
+}
+.left-side h1 {
+  font-family: Oswald, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: 0%;
+}
+.left-side h4 {
+  font-family: Roboto,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+}
+.community-content h2{
+  font-family: Oswald, sans-serif;
+font-weight: 500;
+font-style: Medium;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 0%;
+text-align: center;
+margin: 24px;
+
+}
+.community-content p{
+  font-family: Roboto, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+}
+.community-image img {
+  width: 202px;
+  height: 202px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.right-side{
+  flex: 1 1 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.left-side {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+@media (min-width: 1440px) {
+  .community-frame {
+    flex-wrap: nowrap;
+    height: 578px;
+  }
+
+  .left-side {
+    flex: 1;
+    text-align: left;
+  }
+
+  .right-side {
+    flex: 1;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+}
+
+
+
